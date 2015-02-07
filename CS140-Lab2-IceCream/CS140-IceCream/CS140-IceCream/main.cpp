@@ -6,6 +6,11 @@
 //  Copyright (c) 2015 Michael A. Gonzalez. All rights reserved.
 //
 
+/* This program simulates an ice cream parlor. The user places an order of how many
+ cones they would like and then specifies how many scoops per cone and the flavor
+ of each scoop. In the end, a cone made up of keyboard characters is displayed
+ along with the total bill for the order.*/
+
 #include <iostream>
 #include <string>
 #include <sstream>
@@ -15,16 +20,12 @@ void takeOrder();
 void coneBuilder(int numCones);
 void bill(int totalBill);
 
-///////////////
-// VARIABLES //
-///////////////
+/******* VARIABLES *******/
 
 int numCones, numScoops, totalBill;
 char flavor;
 
-//////////
-// MAIN //
-//////////
+/******* MAIN *******/
 
 int main(int argc, const char * argv[]) {
     takeOrder();
@@ -33,11 +34,9 @@ int main(int argc, const char * argv[]) {
     return 0;
 }
 
-///////////////
-// FUNCTIONS //
-///////////////
+/******* FUNCTIONS *******/
 
-// Presents the menu and takes the order
+// Presents the menu and takes the order.
 void takeOrder() {
     cout<<"=== Mike G's Ice Cream ===\n";
     cout<<"1 scoop           --> $3.00\n";
@@ -52,7 +51,7 @@ void takeOrder() {
     }
 }
     
-// Collects input for scoops and displays cone.
+// Collects input for scoops and flavors then displays cone.
 void coneBuilder (int numCones){
     for (int i=1; i<=numCones; i++) {
         std::stringstream ss;
@@ -77,7 +76,7 @@ void coneBuilder (int numCones){
     }
 }
     
-// Displays the final price for the orders
+// Displays the final price for the order.
 void bill (int totalBill){
     cout<<"Your total comes out to $"<<totalBill<<".00\n";
     cout<<"Thank you!\n\n";
