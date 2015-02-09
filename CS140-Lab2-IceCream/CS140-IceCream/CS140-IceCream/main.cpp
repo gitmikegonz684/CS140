@@ -78,6 +78,10 @@ void coneBuilder (int numCones){
     
 // Displays the final price for the order.
 void bill (int totalBill){
-    cout<<"Your total comes out to $"<<totalBill<<".00\n";
+    float bill = (float)totalBill;
+    cout.setf(ios::fixed);
+    cout.setf(ios::showpoint);
+    cout.precision(2);
+    cout<<"Your total comes out to $"<<bill<<"\n";
     cout<<"Thank you!\n\n";
 }
