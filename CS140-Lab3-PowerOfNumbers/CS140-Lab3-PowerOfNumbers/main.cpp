@@ -12,17 +12,64 @@
 #include <iostream>
 using namespace std;
 
-int main(int argc, const char * argv[]) {
+
+/***** VARIABLES *****/
+int answerInt;
+double answerDouble;
+float answerFloat;
+long double answerLong;
+
+
+/***** CLASS *****/
+class math {
+public:
     
-    return 0;
-}
-
-/***** FUNCTIONS *****/
-
-double power(int n=2, double p=1){
-    double answer;
-    for (int i=1, i<=p, i++){
-        answer+=n*n;
+    void power(double n, int p=2){
+        answerDouble=n;
+        for (int i=1; i<p; i++) {
+            answerDouble=answerDouble*n;
+        }
+        cout<<n<<" to the power of "<<p<<" equals: "<<answerDouble<<"\n";
     }
-    return answer;
+    
+    void power(int n, int p=2){
+        answerInt=n;
+        for (int i=1; i<p; i++) {
+            answerInt=answerInt*n;
+        }
+        cout<<n<<" to the power of "<<p<<" equals: "<<answerInt<<"\n";
+    }
+    
+    void power(float n, int p=2){
+        answerFloat=n;
+        for (int i=1; i<p; i++) {
+            answerFloat=answerFloat*n;
+        }
+        cout<<n<<" to the power of "<<p<<" equals: "<<answerFloat<<"\n";
+    }
+    
+    void power(long double n, int p=2){
+        answerLong=n;
+        for (int i=1; i<p; i++) {
+            answerLong=answerLong*n;
+        }
+        cout<<n<<" to the power of "<<p<<" equals: "<<answerLong<<"\n";
+    }
+};
+
+
+/***** MAIN *****/
+int main(int argc, const char * argv[]) {
+    math p;
+    cout<<"#1\n";
+    p.power(5.2761, 5);
+    cout<<"#2\n";
+    p.power(3.5, 4);
+    cout<<"#3\n";
+    p.power(2, 20);
+    cout<<"#4\n";
+    p.power((long double) 121, 10);
+    cout<<"#5\n";
+    p.power(256);
+    return 0;
 }
