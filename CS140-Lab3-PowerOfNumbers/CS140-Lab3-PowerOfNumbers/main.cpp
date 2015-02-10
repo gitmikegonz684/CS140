@@ -14,10 +14,10 @@ using namespace std;
 
 
 /***** VARIABLES *****/
-int answerInt;
-double answerDouble;
-float answerFloat;
-long double answerLong;
+int answerInt, selection, nInt, exponent;
+double answerDouble, nDouble;
+float answerFloat, nFloat;
+long double answerLong, nLong;
 
 
 /***** CLASS *****/
@@ -61,15 +61,29 @@ public:
 /***** MAIN *****/
 int main(int argc, const char * argv[]) {
     math p;
-    cout<<"#1\n";
-    p.power(5.2761, 5);
-    cout<<"#2\n";
-    p.power(3.5, 4);
-    cout<<"#3\n";
-    p.power(2, 20);
-    cout<<"#4\n";
-    p.power((long double) 121, 10);
-    cout<<"#5\n";
-    p.power(256);
+    cout<<"***** WELCOME !!! *****\n";
+    cout<<"Please enter a Double:\n";
+    cin>>nDouble;
+    cout<<"Please enter an exponent:\n";
+    cin>>exponent;
+    p.power(nDouble, exponent);
+    cout<<"Please enter a Float:\n";
+    cin>>nFloat;
+    cout<<"Please enter an exponent:\n";
+    cin>>exponent;
+    p.power(nFloat, exponent);
+    cout<<"Please enter an Integer:\n";
+    cin>>nInt;
+    cout<<"Please enter an exponent:\n";
+    cin>>exponent;
+    p.power(nInt, exponent);
+    cout<<"Please enter a Long:\n";
+    cin>>nLong;
+    cout<<"Please enter an exponent:\n";
+    cin>>exponent;
+    p.power((long double) nLong, exponent);
+    cout<<"Please enter a Interger to be squared:\n";
+    cin>>nInt;
+    p.power(nInt);
     return 0;
 }
