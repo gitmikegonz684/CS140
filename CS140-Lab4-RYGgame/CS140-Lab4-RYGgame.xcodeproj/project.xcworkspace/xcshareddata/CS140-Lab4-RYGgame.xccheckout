@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EBCB9EBD-8019-4297-8D09-4A93DAAA0BC6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CS140-Lab4-RYGgame</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1E94D8A8E8FDF1F2EC40F387E4BCF29EB94A26A8</key>
+		<string>https://github.com/magonzz/CS140.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CS140-Lab4-RYGgame/CS140-Lab4-RYGgame.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1E94D8A8E8FDF1F2EC40F387E4BCF29EB94A26A8</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/magonzz/CS140.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1E94D8A8E8FDF1F2EC40F387E4BCF29EB94A26A8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1E94D8A8E8FDF1F2EC40F387E4BCF29EB94A26A8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CS140</string>
+		</dict>
+	</array>
+</dict>
+</plist>
