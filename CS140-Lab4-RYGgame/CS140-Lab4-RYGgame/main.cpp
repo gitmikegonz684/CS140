@@ -28,9 +28,14 @@ public:
         g2 = guess.substr(1,1);
         g3 = guess.substr(2,2);
         
+        // TO DO:
+        // Have to check entire number for RYG values and then
+        // assign the colors to the position where they were determined.
+        // Comparing single digits at a time may never work.
+        
         if (g1 == t1){
             gCount+=1;
-        } else if ((target.find(g1) != string::npos) && (g1 != g2) && (g1 != g3)){
+        } else if (target.find(g1) != string::npos) {
             yCount+=1;
         } else {
             rCount+=1;
@@ -38,16 +43,24 @@ public:
         
         if (g2 == t2){
             gCount+=1;
-        } else if ((target.find(g2) != string::npos) && (g2 != g1) && (g2 != g3)){
-            yCount+=1;
+        } else if (target.find(g2) != string::npos) {
+            if (g2 == t1) {
+                rCount+=1;
+            } else {
+                yCount+=1;
+            }
         } else {
             rCount+=1;
         }
         
         if (g3 == t3){
             gCount+=1;
-        } else if ((target.find(g3) != string::npos) && (g3 != g2) && (g3 != g1)){
-            yCount+=1;
+        } else if (target.find(g3) != string::npos) {
+            if ((g3 == t2) || (g3 == t1)) {
+                rCount+=1;
+            } else {
+                yCount+=1;
+            }
         } else {
             rCount+=1;
         }
