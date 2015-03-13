@@ -9,12 +9,15 @@
 #include <iostream>
 #include <stdlib.h>
 #include <time.h>
+#include <string>
 using namespace std;
 
 /***** VARIABLES *****/
-string guess, target;
+string guess, target, cpyTarget;
 string g1, g2, g3, t1, t2, t3;
-int rCount, yCount, gCount;
+int rCount, yCount, gCount, compareCount;
+bool p1, p2, p3; //digit places in target number.
+
 
 /***** CLASS *****/
 class rygEval {
@@ -27,58 +30,55 @@ public:
         g1 = guess.substr(0,1);
         g2 = guess.substr(1,1);
         g3 = guess.substr(2,2);
+        cpyTarget = target;
         
-        // TO DO:
-        // Have to check entire number for RYG values and then
-        // assign the colors to the position where they were determined.
-        // Comparing single digits at a time may never work.
-        
-        if (g1 == t1){
-            gCount+=1;
-        } else if (target.find(g1) != string::npos) {
-            yCount+=1;
-        } else {
-            rCount+=1;
+        if (g1 == t1) {
+            gCount++;
+            cpyTarget.replace(cpyTarget.find(t1), 1, "f");
+            //t1="f";
+        }
+        if (g2 == t2) {
+            gCount++;
+            cpyTarget.replace(cpyTarget.find(t2), 1, "f");
+            //t2 = "f";
+        }
+        if (g3 == t3) {
+            gCount++;
+            cpyTarget.replace(cpyTarget.find(t3), 1, "f");
+            //t3 = "f";
         }
         
-        if (g2 == t2){
-            gCount+=1;
-        } else if (target.find(g2) != string::npos) {
-            if (g2 == t1) {
-                rCount+=1;
-            } else {
-                yCount+=1;
-            }
-        } else {
-            rCount+=1;
+        if (cpyTarget.find(g1) != string::npos) {
+            cpyTarget.replace(cpyTarget.find(g1), 1, "f");
+            yCount++;
+        }
+        if (cpyTarget.find(g2) != string::npos) {
+            cpyTarget.replace(cpyTarget.find(g2), 1, "f");
+            yCount++;
+        }
+        if (cpyTarget.find(g3) != string::npos) {
+            cpyTarget.replace(cpyTarget.find(g3), 1, "f");
+            yCount++;
         }
         
-        if (g3 == t3){
-            gCount+=1;
-        } else if (target.find(g3) != string::npos) {
-            if ((g3 == t2) || (g3 == t1)) {
-                rCount+=1;
-            } else {
-                yCount+=1;
-            }
-        } else {
-            rCount+=1;
-        }
+        rCount=3-(gCount+yCount);
+        
     }
 };
+
 
 /***** MAIN *****/
 int main(int argc, const char * argv[]) {
     rygEval p;
     srand(time(NULL));
-    
     target = to_string(rand() % 899 + 100);
-    cout<<target<<"\n";
     t1 = target.substr(0,1);
     t2 = target.substr(1,1);
     t3 = target.substr(2,2);
+    cout<<"I'm thinking of a number between 100-999...\n\n";
     
     while (guess != target) {
+        //cout<<target<<"\n";
         cout<<"Enter a guess: ";
         cin>>guess;
         if (guess.length()>3) {
@@ -91,7 +91,7 @@ int main(int argc, const char * argv[]) {
         cout<<"          "<<gCount<<" GREEN\n\n";
     }
     
-    cout<<"WINNER WINNER PIZZA FOR DINNER !!!\n";
+    cout<<"WINNER WINNER PIZZA FOR DINNER !!!\n\n";
     
     return 0;
 }
