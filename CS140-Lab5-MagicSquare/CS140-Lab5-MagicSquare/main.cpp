@@ -97,7 +97,7 @@ public:
 int main(int argc, const char * argv[]) {
 //    cout<<"Pick a number between 1 and 15:\n";
 //    cin>>n;
-    n=7;
+    n=15;
     square s;
     s.magic(n);
     s.display();
