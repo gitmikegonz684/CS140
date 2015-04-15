@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		140D906B1ADC910700296A89 /* input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 140D90691ADC910700296A89 /* input.cpp */; };
 		14BD25721AD3A0C900985FC4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14BD25711AD3A0C900985FC4 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		140D90691ADC910700296A89 /* input.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = input.cpp; sourceTree = "<group>"; };
+		140D906A1ADC910700296A89 /* input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = input.h; sourceTree = "<group>"; };
 		14BD256E1AD3A0C900985FC4 /* CS140-Lab8-Dictionary */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "CS140-Lab8-Dictionary"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14BD25711AD3A0C900985FC4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				14BD25711AD3A0C900985FC4 /* main.cpp */,
+				140D90691ADC910700296A89 /* input.cpp */,
+				140D906A1ADC910700296A89 /* input.h */,
 			);
 			path = "CS140-Lab8-Dictionary";
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				140D906B1ADC910700296A89 /* input.cpp in Sources */,
 				14BD25721AD3A0C900985FC4 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
