@@ -12,41 +12,51 @@
 #include <sstream>
 #include <map>
 #include <locale>
-//#include "input.h"
+#include <vector>
+#include "Dictionary.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
     
-    ifstream inputFile;
-    string line;
-    locale l;
-    //Input no;
-    map<string, string> words;
-    inputFile.open("list.txt");
+    Dictionary d;
+    int usrAction=9;
+    string word;
     
-    if (inputFile.fail()) {
-        cout<<"Failed to access file. Goodbye.\n";
-        exit(1);
-    }
-    size_t n;
-    while (!inputFile.eof()) {
-        getline(inputFile, line);
-        n = line.find("a");
-        line.replace(n, 1, "$");
-//        for (int i=0; i<line.length(); i++) {
-//            line = line + toupper(line[i], l);
-//        }
-        //in case of "/" at end of lines use code below
-        //line = line
-        //line.erase(line.end());
-        words[line]=line;
-    }
-    for (map <string, string> :: iterator it = words.begin(); it!=words.end(); it++){
-        cout<<it->second<<endl;
-    }
+    d.create("list.txt");
+    d.display();
     
-    //cout<<words["SOLUTION"];
-    cout<<"\ndone";
-    
+    while (usrAction!=0) {
+        cout<<"\nEnter the number of your next action:\n1. ADD a word to your dictionary\n2. REMOVE a word from your dictionary\n3. FIND a word in your dictionary\n4. DISPLAY your dictionary\n";
+        cin>>usrAction;
+        switch (usrAction) {
+            case 1:
+                cout<<"Write the word you would like to add:\n";
+                word="";
+                cin>>word;
+                d.add(word);
+                //d.display();
+                break;
+            case 2:
+                cout<<"Write the word you would like to remove:\n";
+                word="";
+                cin>>word;
+                d.remove(word);
+                //d.display();
+                break;
+            case 3:
+                cout<<"Write the word you would like to find:\n";
+                word="";
+                cin>>word;
+                d.find(word);
+                //d.display();
+                break;
+            case 4:
+                d.display();
+            default:
+                break;
+        }
+
+    }
+    cout<<"\n\n//***** GOODBYE *****//";
     return 0;
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0620"
+   LastUpgradeVersion = "0630"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "14BD256D1AD3A0C900985FC4"
+               BlueprintIdentifier = "14C571C81ADE235C00A277B7"
                BuildableName = "CS140-Lab8-Dictionary"
                BlueprintName = "CS140-Lab8-Dictionary"
                ReferencedContainer = "container:CS140-Lab8-Dictionary.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "14BD256D1AD3A0C900985FC4"
+            BlueprintIdentifier = "14C571C81ADE235C00A277B7"
             BuildableName = "CS140-Lab8-Dictionary"
             BlueprintName = "CS140-Lab8-Dictionary"
             ReferencedContainer = "container:CS140-Lab8-Dictionary.xcodeproj">
@@ -52,7 +52,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "14BD256D1AD3A0C900985FC4"
+            BlueprintIdentifier = "14C571C81ADE235C00A277B7"
             BuildableName = "CS140-Lab8-Dictionary"
             BlueprintName = "CS140-Lab8-Dictionary"
             ReferencedContainer = "container:CS140-Lab8-Dictionary.xcodeproj">
@@ -71,7 +71,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "14BD256D1AD3A0C900985FC4"
+            BlueprintIdentifier = "14C571C81ADE235C00A277B7"
             BuildableName = "CS140-Lab8-Dictionary"
             BlueprintName = "CS140-Lab8-Dictionary"
             ReferencedContainer = "container:CS140-Lab8-Dictionary.xcodeproj">

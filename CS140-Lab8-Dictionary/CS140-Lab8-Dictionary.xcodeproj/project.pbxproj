@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		140D906B1ADC910700296A89 /* input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 140D90691ADC910700296A89 /* input.cpp */; };
-		14BD25721AD3A0C900985FC4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14BD25711AD3A0C900985FC4 /* main.cpp */; };
+		148311D91AE0315F00F51066 /* Dictionary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 148311D71AE0315F00F51066 /* Dictionary.cpp */; };
+		14C571CD1ADE235C00A277B7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14C571CC1ADE235C00A277B7 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		14BD256C1AD3A0C900985FC4 /* CopyFiles */ = {
+		14C571C71ADE235C00A277B7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,14 +24,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		140D90691ADC910700296A89 /* input.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = input.cpp; sourceTree = "<group>"; };
-		140D906A1ADC910700296A89 /* input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = input.h; sourceTree = "<group>"; };
-		14BD256E1AD3A0C900985FC4 /* CS140-Lab8-Dictionary */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "CS140-Lab8-Dictionary"; sourceTree = BUILT_PRODUCTS_DIR; };
-		14BD25711AD3A0C900985FC4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		148311D71AE0315F00F51066 /* Dictionary.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Dictionary.cpp; sourceTree = "<group>"; };
+		148311D81AE0315F00F51066 /* Dictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dictionary.h; sourceTree = "<group>"; };
+		14C571C91ADE235C00A277B7 /* CS140-Lab8-Dictionary */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "CS140-Lab8-Dictionary"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14C571CC1ADE235C00A277B7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		14BD256B1AD3A0C900985FC4 /* Frameworks */ = {
+		14C571C61ADE235C00A277B7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,28 +41,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		14BD25651AD3A0C900985FC4 = {
+		14C571C01ADE235C00A277B7 = {
 			isa = PBXGroup;
 			children = (
-				14BD25701AD3A0C900985FC4 /* CS140-Lab8-Dictionary */,
-				14BD256F1AD3A0C900985FC4 /* Products */,
+				14C571CB1ADE235C00A277B7 /* CS140-Lab8-Dictionary */,
+				14C571CA1ADE235C00A277B7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		14BD256F1AD3A0C900985FC4 /* Products */ = {
+		14C571CA1ADE235C00A277B7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				14BD256E1AD3A0C900985FC4 /* CS140-Lab8-Dictionary */,
+				14C571C91ADE235C00A277B7 /* CS140-Lab8-Dictionary */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		14BD25701AD3A0C900985FC4 /* CS140-Lab8-Dictionary */ = {
+		14C571CB1ADE235C00A277B7 /* CS140-Lab8-Dictionary */ = {
 			isa = PBXGroup;
 			children = (
-				14BD25711AD3A0C900985FC4 /* main.cpp */,
-				140D90691ADC910700296A89 /* input.cpp */,
-				140D906A1ADC910700296A89 /* input.h */,
+				14C571CC1ADE235C00A277B7 /* main.cpp */,
+				148311D71AE0315F00F51066 /* Dictionary.cpp */,
+				148311D81AE0315F00F51066 /* Dictionary.h */,
 			);
 			path = "CS140-Lab8-Dictionary";
 			sourceTree = "<group>";
@@ -70,13 +70,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		14BD256D1AD3A0C900985FC4 /* CS140-Lab8-Dictionary */ = {
+		14C571C81ADE235C00A277B7 /* CS140-Lab8-Dictionary */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14BD25751AD3A0C900985FC4 /* Build configuration list for PBXNativeTarget "CS140-Lab8-Dictionary" */;
+			buildConfigurationList = 14C571D01ADE235C00A277B7 /* Build configuration list for PBXNativeTarget "CS140-Lab8-Dictionary" */;
 			buildPhases = (
-				14BD256A1AD3A0C900985FC4 /* Sources */,
-				14BD256B1AD3A0C900985FC4 /* Frameworks */,
-				14BD256C1AD3A0C900985FC4 /* CopyFiles */,
+				14C571C51ADE235C00A277B7 /* Sources */,
+				14C571C61ADE235C00A277B7 /* Frameworks */,
+				14C571C71ADE235C00A277B7 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -84,54 +84,54 @@
 			);
 			name = "CS140-Lab8-Dictionary";
 			productName = "CS140-Lab8-Dictionary";
-			productReference = 14BD256E1AD3A0C900985FC4 /* CS140-Lab8-Dictionary */;
+			productReference = 14C571C91ADE235C00A277B7 /* CS140-Lab8-Dictionary */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		14BD25661AD3A0C900985FC4 /* Project object */ = {
+		14C571C11ADE235C00A277B7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Michael A. Gonzalez";
 				TargetAttributes = {
-					14BD256D1AD3A0C900985FC4 = {
-						CreatedOnToolsVersion = 6.2;
+					14C571C81ADE235C00A277B7 = {
+						CreatedOnToolsVersion = 6.3;
 					};
 				};
 			};
-			buildConfigurationList = 14BD25691AD3A0C900985FC4 /* Build configuration list for PBXProject "CS140-Lab8-Dictionary" */;
+			buildConfigurationList = 14C571C41ADE235C00A277B7 /* Build configuration list for PBXProject "CS140-Lab8-Dictionary" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 14BD25651AD3A0C900985FC4;
-			productRefGroup = 14BD256F1AD3A0C900985FC4 /* Products */;
+			mainGroup = 14C571C01ADE235C00A277B7;
+			productRefGroup = 14C571CA1ADE235C00A277B7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				14BD256D1AD3A0C900985FC4 /* CS140-Lab8-Dictionary */,
+				14C571C81ADE235C00A277B7 /* CS140-Lab8-Dictionary */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		14BD256A1AD3A0C900985FC4 /* Sources */ = {
+		14C571C51ADE235C00A277B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				140D906B1ADC910700296A89 /* input.cpp in Sources */,
-				14BD25721AD3A0C900985FC4 /* main.cpp in Sources */,
+				14C571CD1ADE235C00A277B7 /* main.cpp in Sources */,
+				148311D91AE0315F00F51066 /* Dictionary.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		14BD25731AD3A0C900985FC4 /* Debug */ = {
+		14C571CE1ADE235C00A277B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -149,9 +149,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -171,7 +173,7 @@
 			};
 			name = Debug;
 		};
-		14BD25741AD3A0C900985FC4 /* Release */ = {
+		14C571CF1ADE235C00A277B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -193,6 +195,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -205,14 +208,14 @@
 			};
 			name = Release;
 		};
-		14BD25761AD3A0C900985FC4 /* Debug */ = {
+		14C571D11ADE235C00A277B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		14BD25771AD3A0C900985FC4 /* Release */ = {
+		14C571D21ADE235C00A277B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -222,25 +225,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		14BD25691AD3A0C900985FC4 /* Build configuration list for PBXProject "CS140-Lab8-Dictionary" */ = {
+		14C571C41ADE235C00A277B7 /* Build configuration list for PBXProject "CS140-Lab8-Dictionary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				14BD25731AD3A0C900985FC4 /* Debug */,
-				14BD25741AD3A0C900985FC4 /* Release */,
+				14C571CE1ADE235C00A277B7 /* Debug */,
+				14C571CF1ADE235C00A277B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		14BD25751AD3A0C900985FC4 /* Build configuration list for PBXNativeTarget "CS140-Lab8-Dictionary" */ = {
+		14C571D01ADE235C00A277B7 /* Build configuration list for PBXNativeTarget "CS140-Lab8-Dictionary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				14BD25761AD3A0C900985FC4 /* Debug */,
-				14BD25771AD3A0C900985FC4 /* Release */,
+				14C571D11ADE235C00A277B7 /* Debug */,
+				14C571D21ADE235C00A277B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 14BD25661AD3A0C900985FC4 /* Project object */;
+	rootObject = 14C571C11ADE235C00A277B7 /* Project object */;
 }
