@@ -26,7 +26,7 @@ int main(int argc, const char * argv[]) {
     d.display();
     
     while (usrAction!=0) {
-        cout<<"\nEnter the number of your next action:\n1. ADD a word to your dictionary\n2. REMOVE a word from your dictionary\n3. FIND a word in your dictionary\n4. DISPLAY your dictionary\n";
+        cout<<"\nEnter the number of your next action:\n1. ADD a word to your dictionary\n2. REMOVE a word from your dictionary\n3. FIND a word in your dictionary\n4. DISPLAY your dictionary\n0. EXIT\n";
         cin>>usrAction;
         switch (usrAction) {
             case 1:
@@ -34,21 +34,18 @@ int main(int argc, const char * argv[]) {
                 word="";
                 cin>>word;
                 d.add(word);
-                //d.display();
                 break;
             case 2:
                 cout<<"Write the word you would like to remove:\n";
                 word="";
                 cin>>word;
                 d.remove(word);
-                //d.display();
                 break;
             case 3:
                 cout<<"Write the word you would like to find:\n";
                 word="";
                 cin>>word;
                 d.find(word);
-                //d.display();
                 break;
             case 4:
                 d.display();
@@ -57,6 +54,6 @@ int main(int argc, const char * argv[]) {
         }
 
     }
-    cout<<"\n\n//***** GOODBYE *****//";
+    cout<<"\n//***** GOODBYE *****//\n\n\n\n\n\n";
     return 0;
 }

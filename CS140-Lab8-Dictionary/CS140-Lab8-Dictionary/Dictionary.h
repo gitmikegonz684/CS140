@@ -29,6 +29,8 @@ public:
     locale l;
     vector<string> list;
     map<string, string> capsList;
+    map<string, string>::iterator iter;
+
     
     void create(string filename);
     void display();

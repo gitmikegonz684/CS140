@@ -67,7 +67,15 @@ void Dictionary::add(string word)
     for (int j=0; j<word.length(); j++) {
         capsWord = capsWord + toupper(word[j], l);
     }
-    capsList[capsWord]=capsWord;
+    
+    iter=capsList.find(capsWord);
+    if (iter != capsList.end()) {
+        cout<<"\n!!! WORD ALREDY IN YOUR DICTIONARY !!!\n";
+    }
+    else {
+        capsList[capsWord]=capsWord;
+        cout<<"\n!!! WORD ADDED !!!\n";
+    }
 }
 
 void Dictionary::remove(string word)
@@ -76,12 +84,20 @@ void Dictionary::remove(string word)
     for (int j=0; j<word.length(); j++) {
         capsWord = capsWord + toupper(word[j], l);
     }
-    capsList.erase(capsWord);
+    
+    iter=capsList.find(capsWord);
+    if (iter != capsList.end()) {
+        capsList.erase(capsWord);
+        cout<<"\n!!! WORD REMOVED !!!\n";
+    }
+    else{
+        cout<<"\n!!! WORD NOT FOUND !!!\n!!! COULD NOT REMOVE !!!\n";
+    }
+
 }
 
 void Dictionary::find(string word)
 {
-    map<string, string>::iterator iter;
     capsWord="";
     
     for (int j=0; j<word.length(); j++) {
@@ -90,9 +106,9 @@ void Dictionary::find(string word)
 
     iter=capsList.find(capsWord);
     if (iter != capsList.end()) {
-        cout<<"FOUND\n";
+        cout<<"\n!!! WORD FOUND !!!\n";
     }
     else{
-        cout<<"NOT FOUND\n";
+        cout<<"\n!!! WORD NOT FOUND !!!\n";
     }
 }
