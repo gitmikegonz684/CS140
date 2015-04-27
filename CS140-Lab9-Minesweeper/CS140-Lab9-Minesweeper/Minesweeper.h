@@ -24,6 +24,9 @@ public:
     
     void create(int size, int level);
     void print();
+    bool checkGameOver(int x, int y);
+    void checkSurround(int x, int y);
+    bool checkWin();
 };
 
 #endif /* defined(__CS140_Lab9_Minesweeper__Minesweeper__) */
