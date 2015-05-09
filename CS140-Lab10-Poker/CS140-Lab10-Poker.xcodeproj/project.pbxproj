@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14371FF11AEDF50700256DC6 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14371FEF1AEDF50700256DC6 /* Player.cpp */; };
-		14371FF41AEDF51E00256DC6 /* Deck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14371FF21AEDF51E00256DC6 /* Deck.cpp */; };
+		1437714B1AF72B54002F3368 /* Poker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 143771491AF72B54002F3368 /* Poker.cpp */; };
+		1437714E1AF72B90002F3368 /* Deck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1437714C1AF72B90002F3368 /* Deck.cpp */; };
 		14570A121AEDB72000A3E221 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14570A111AEDB72000A3E221 /* main.cpp */; };
-		14570A1A1AEDCD1200A3E221 /* Card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14570A181AEDCD1200A3E221 /* Card.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,14 +25,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		14371FEF1AEDF50700256DC6 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
-		14371FF01AEDF50700256DC6 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
-		14371FF21AEDF51E00256DC6 /* Deck.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Deck.cpp; sourceTree = "<group>"; };
-		14371FF31AEDF51E00256DC6 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		143771491AF72B54002F3368 /* Poker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Poker.cpp; sourceTree = "<group>"; };
+		1437714A1AF72B54002F3368 /* Poker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Poker.h; sourceTree = "<group>"; };
+		1437714C1AF72B90002F3368 /* Deck.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Deck.cpp; sourceTree = "<group>"; };
+		1437714D1AF72B90002F3368 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
 		14570A0E1AEDB72000A3E221 /* CS140-Lab10-Poker */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "CS140-Lab10-Poker"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14570A111AEDB72000A3E221 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		14570A181AEDCD1200A3E221 /* Card.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Card.cpp; sourceTree = "<group>"; };
-		14570A191AEDCD1200A3E221 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,12 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				14570A111AEDB72000A3E221 /* main.cpp */,
-				14371FF21AEDF51E00256DC6 /* Deck.cpp */,
-				14371FF31AEDF51E00256DC6 /* Deck.h */,
-				14371FEF1AEDF50700256DC6 /* Player.cpp */,
-				14371FF01AEDF50700256DC6 /* Player.h */,
-				14570A181AEDCD1200A3E221 /* Card.cpp */,
-				14570A191AEDCD1200A3E221 /* Card.h */,
+				143771491AF72B54002F3368 /* Poker.cpp */,
+				1437714A1AF72B54002F3368 /* Poker.h */,
+				1437714C1AF72B90002F3368 /* Deck.cpp */,
+				1437714D1AF72B90002F3368 /* Deck.h */,
 			);
 			path = "CS140-Lab10-Poker";
 			sourceTree = "<group>";
@@ -133,10 +128,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14371FF41AEDF51E00256DC6 /* Deck.cpp in Sources */,
+				1437714E1AF72B90002F3368 /* Deck.cpp in Sources */,
 				14570A121AEDB72000A3E221 /* main.cpp in Sources */,
-				14570A1A1AEDCD1200A3E221 /* Card.cpp in Sources */,
-				14371FF11AEDF50700256DC6 /* Player.cpp in Sources */,
+				1437714B1AF72B54002F3368 /* Poker.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

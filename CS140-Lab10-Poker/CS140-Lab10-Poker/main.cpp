@@ -6,28 +6,24 @@
 //  Copyright (c) 2015 Michael A. Gonzalez. All rights reserved.
 //
 
+#include "Poker.h"
+#include "Deck.h"
+
 #include <iostream>
 #include <string>
-#include "Card.h"
-#include "Player.h"
-#include "Deck.h"
+#include <vector>
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-    
-    string input, playerName;
-    int numPlayers;
-    
-    cout<<"Want to play poker or quit? (p or q)\n";
-    cin>>input;
-    cout<<"How many players?\n";
-    cin>>numPlayers;
-    for (int i=1; i<=numPlayers; i++) {
-        playerName="";
-        cout<<"Enter the name of Player "<<numPlayers<<":\n";
-        cin>>playerName;
-        Player playerName;
+    int count=0;
+    while (count<99) {
+        Poker p;
+        p.create();
+        int howMany=p.intro(); //howMany players in the game
+        p.deal(howMany); //deal 5 cards to "howMany" # of players
+        p.inspect();
+        p.endGame();
+        count++;
     }
-    
     return 0;
 }
